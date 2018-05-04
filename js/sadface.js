@@ -543,7 +543,6 @@ function get_atom(atom_id) {
 
     Returns: An atom dict
     */
-    console.log(atom_id);
     if (atom_id) {
         var node;
         var size = Object.keys(sd.nodes).length;
@@ -845,7 +844,7 @@ function download(filename, text) {
     /*
     Downloads a file given its filename and its text using utf-8 charset
     */
-    console.log("Downloading "+filename);
+
     var outfile = document.createElement("a");
     outfile.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
     outfile.setAttribute("download", filename);
@@ -967,7 +966,6 @@ function update_resource(resource_id, content, title) {
     Updates the resource in sd;
     */
     if (resource_id && (content || title)) {
-        console.log("hello");
         var resource = get_resource(resource_id);
         if (resource !== null && resource !== undefined) {
             if (content !== null && content !== undefined) {
