@@ -678,11 +678,11 @@ mt.bind("d", function() {
 });
 
 mt.bind("f", function() {
-    //console.log("FIX NODE PLACEMENT");
+    //TODO: FIX NODE PLACEMENT
 });
 
 mt.bind("s", function() {
-    //console.log("SCALE SELECTED NODE");
+    //TODO: SCALE SELECTED NODE
 });
 
 mt.bind("h", function() {
@@ -691,7 +691,7 @@ mt.bind("h", function() {
 });
 
 mt.bind("t", function() {
-    //console.log("TOGGLE TEXT LABEL VISIBILITY");
+    //TODO: TOGGLE TEXT LABEL VISIBILITY
 });
 
 mt.bind(["command+z","ctrl+z"], function() {
@@ -731,7 +731,6 @@ $("#editMetadataModal").on("show.bs.modal", function() {
 
 
 $("#resource_text").blur(function() {
-    //console.log("blur");
 });
 
 
