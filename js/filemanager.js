@@ -29,7 +29,6 @@ function filemanager(operation, filetype, tab_id)
 			var file = files[0];
 			var filename = file.name;
 			document.getElementById("title_"+tab_id).innerText = filename;
-			console.log(file.name);
 			var reader = new FileReader();		
 			reader.onload = function(e) {
 				var content = reader.result;

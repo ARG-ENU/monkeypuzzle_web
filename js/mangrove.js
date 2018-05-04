@@ -416,7 +416,6 @@ cm = cy.contextMenus({
             if(window.getSelection().baseNode.id=="textarea")
             {
                 selected_text = window.getSelection().toString();
-                console.log("\"" + selected_text + "\" selected");
                 return selected_text;
             }
         }
@@ -661,7 +660,6 @@ function build_cola_layout( opts )
 
 
 mt.bind("a", function() {
-    //console.log("ADD NODE OR EDGE");
 
     var selected_text = get_selected_text();
     if (selected_text === undefined)
@@ -673,7 +671,6 @@ mt.bind("a", function() {
 });
 
 mt.bind("d", function() {
-    //console.log("DELETE SELECTED NODE");
     selected.forEach(function(node) {
         delete_nodes(node);
     });
@@ -681,30 +678,27 @@ mt.bind("d", function() {
 });
 
 mt.bind("f", function() {
-    console.log("FIX NODE PLACEMENT");
+    //console.log("FIX NODE PLACEMENT");
 });
 
 mt.bind("s", function() {
-    console.log("SCALE SELECTED NODE");
+    //console.log("SCALE SELECTED NODE");
 });
 
 mt.bind("h", function() {
-    console.log("hide resource pane");
     $( "#resource-pane" ).toggle();
     $( "#splitter" ).toggle();
 });
 
 mt.bind("t", function() {
-    console.log("TOGGLE TEXT LABEL VISIBILITY");
+    //console.log("TOGGLE TEXT LABEL VISIBILITY");
 });
 
 mt.bind(["command+z","ctrl+z"], function() {
-    //console.log("UNDO");
     undo();
 });
 
 mt.bind(["command+y","ctrl+y"], function() {
-    //console.log("REDO");
     redo();
 });
 
@@ -737,7 +731,7 @@ $("#editMetadataModal").on("show.bs.modal", function() {
 
 
 $("#resource_text").blur(function() {
-    console.log("blur");
+    //console.log("blur");
 });
 
 
